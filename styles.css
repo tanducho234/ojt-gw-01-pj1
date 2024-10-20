@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+}
+.logo span {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.logo img {
+  width: 70px;
+  margin-right: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-icons a img {
+  width: 30px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh; /* Full height */
+  width: 100%;
+  overflow: hidden;
+  background: url(./img/furniture-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  right: 100px;
+  width: 643px; /* Adjust this width as needed */
+  height: 443px;
+  background-color: #fef2e2; /* Yellow background with opacity */
+  color: black;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2; /* Make sure text is on top of the image */
+  text-align: left;
+  border-radius: 10px;
+}
+
+.hero-text-section {
+  width: 70%;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text-section h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 3px;
+}
+
+.hero-text-section h1 {
+  width: 559px;
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  margin-bottom: 20px;
+  color: #b88e2f;
+  line-height: 65px;
+  font-weight: 700;
+}
+
+.hero-text-section p {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.btn {
+  width: 222px;
+  height: 74px;
+  background-color: #b88e2f;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+  .nav-links {
+    gap: 50px;
+  }
+  .hero-text {
+    right: 50px;
+    width: 500px;
+  }
+  .hero-text-section h1 {
+    font-size: 42px;
+    line-height: 55px;
+    width: 100%;
+  }
+  .hero-text-section p {
+    font-size: 16px;
+  }
+  .btn {
+    width: 180px;
+    height: 60px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .logo span {
+    font-size: 24px;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+  .hero-text {
+    right: 20px;
+    width: 90%;
+    padding: 20px;
+  }
+  .hero-text-section h1 {
+    font-size: 36px;
+    line-height: 45px;
+    width: 100%;
+  }
+  .hero-text-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    width: 160px;
+    height: 50px;
+  }
+}
