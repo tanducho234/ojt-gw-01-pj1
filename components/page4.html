@@ -11,12 +11,31 @@
     <div class="carousel-container">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/img/p4_bookroom.png" alt="Bedroom" />
+          <div
+            class="main-image"
+            style="--imgUrl: url(../img/p4_bedroom.png)"
+          ></div>
+          <!-- <img
+            class="main-image"
+            src="../img/p4_livingroom.png"
+            alt="Living Room"
+          /> -->
+          <div
+            class="next-image"
+            style="--imgUrl: url(../img/p4_bookroom.png)"
+          ></div>
+          <!-- <img
+            class="next-image"
+            src="../img/p4_bookroom.png"
+            alt="Next Image"
+          /> -->
           <div class="carousel-caption">
             <span class="room-number">01</span>
             <h3>Book Room</h3>
             <h4>Inner Peace</h4>
-            <button class="arrow-btn">→</button>
+            <button class="arrow-btn">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
           </div>
           <div class="carousel-dots">
             <span class="dot active"></span>
@@ -26,12 +45,31 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/p4_livingroom.png" alt="Living Room" />
+          <div
+            class="main-image"
+            style="--imgUrl: url(../img/p4_bookroom.png)"
+          ></div>
+          <!-- <img
+            class="main-image"
+            src="../img/p4_workingroom.png"
+            alt="Working Room"
+          /> -->
+          <div
+            class="next-image"
+            style="--imgUrl: url(../img/p4_livingroom.png)"
+          ></div>
+          <!-- <img
+            class="next-image"
+            src="../img/p4_livingroom.png"
+            alt="Next Image"
+          /> -->
           <div class="carousel-caption">
             <span class="room-number">02</span>
             <h3>Living Room</h3>
             <h4>Cozy Comfort</h4>
-            <button class="arrow-btn">→</button>
+            <button class="arrow-btn">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
           </div>
           <div class="carousel-dots">
             <span class="dot"></span>
@@ -41,12 +79,27 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/p4_workingroom.png" alt="Working room" />
+          <!-- <img class="main-image" src="../img/p4_bedroom.png" alt="Bedroom" /> -->
+          <div
+            class="main-image"
+            style="--imgUrl: url(../img/p4_livingroom.png)"
+          ></div>
+          <div
+            class="next-image"
+            style="--imgUrl: url(../img/p4_workingroom.png)"
+          ></div>
+          <!-- <img
+            class="next-image"
+            src="../img/p4_workingroom.png"
+            alt="Next Image"
+          /> -->
           <div class="carousel-caption">
             <span class="room-number">03</span>
             <h3>Working Room</h3>
             <h4>Culinary Delight</h4>
-            <button class="arrow-btn">→</button>
+            <button class="arrow-btn">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
           </div>
           <div class="carousel-dots">
             <span class="dot"></span>
@@ -56,12 +109,31 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/p4_bedroom.png" alt="Bedroom" />
+          <div
+            class="main-image"
+            style="--imgUrl: url(../img/p4_workingroom.png)"
+          ></div>
+          <!-- <img
+            class="main-image"
+            src="../img/p4_bookroom.png"
+            alt="Book Room"
+          /> -->
+          <div
+            class="next-image"
+            style="--imgUrl: url(../img/p4_bedroom.png)"
+          ></div>
+          <!-- <img
+            class="next-image"
+            src="../img/p4_bedroom.png"
+            alt="Next Image"
+          /> -->
           <div class="carousel-caption">
             <span class="room-number">04</span>
             <h3>Bedroom</h3>
             <h4>Rest Retreat</h4>
-            <button class="arrow-btn">→</button>
+            <button class="arrow-btn">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
           </div>
           <div class="carousel-dots">
             <span class="dot"></span>
@@ -76,7 +148,6 @@
 </section>
 
 <style>
-
   .carousel-dots {
     position: absolute;
     bottom: 20px;
@@ -88,7 +159,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff80;
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -98,15 +169,11 @@
     background-color: #ffffff;
   }
 
-  .carousel-item {
-    position: relative;
-  }
-
   .carousel-caption {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #ffffffcc;
     padding: 15px;
     border-radius: 5px;
     max-width: 250px;
@@ -124,7 +191,6 @@
     font-size: 16px;
     margin: 0 0 5px 0;
   }
-
   .carousel-caption h4 {
     font-size: 14px;
     margin: 0 0 10px 0;
@@ -132,19 +198,24 @@
   }
 
   .arrow-btn {
+    height: 48px;
+    width: 48px;
     background-color: #d4af37;
-    color: white;
     border: none;
-    padding: 5px 10px;
-    font-size: 14px;
     cursor: pointer;
+  }
+  .ion-icon {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
   }
 
   .room-inspiration {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 50px;
-    background-color: #f5f5f5;
+    background-color: #fcf8f3;
   }
 
   .content {
@@ -182,7 +253,8 @@
   }
 
   .carousel-item.active {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
 
   .carousel-caption {
@@ -213,11 +285,8 @@
     color: white;
     border: none;
     padding: 5px 10px;
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer;
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
   }
 
   .carousel-controls {
@@ -239,7 +308,6 @@
     background-color: #d4af37;
   }
 
-  
   .carousel-item img {
     width: 50%;
     height: 400px; /* Set a fixed height for all images */
@@ -250,9 +318,9 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    right: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
+    border-radius: 0%;
     margin: 0; /* Reset margin to ensure consistent spacing */
   }
 
@@ -264,12 +332,14 @@
 
   .carousel-caption .arrow-btn {
     position: absolute;
-    bottom: 15px;
-    right: 15px;
+    bottom: 0;
+    right: -48px;
+    background: #b88e2f;
   }
-  
+
   .carousel-container {
     position: relative;
+    width: 100%;
   }
 
   .carousel-control {
@@ -293,32 +363,23 @@
   .carousel-control.next {
     right: 10px;
   }
+  .main-image {
+    width: 404px; /* Ảnh chính chiếm 60% chiều rộng */
+    height: 582px; /* Chiều cao cố định cho ảnh chính */
+    background-position: center;
+    background-repeat: no-repeat;
+    background: var(--imgUrl);
+    background-size: cover;
+    margin-right: 20px;
+  }
+
+  .next-image {
+    width: 372px; /* Ảnh phụ chiếm 30% chiều rộng */
+    height: 486px; /* Chiều cao cố định cho ảnh phụ */
+    background-position: center;
+    background-repeat: no-repeat;
+    background: var(--imgUrl);
+    background-size: cover;
+    opacity: 0.5;
+  }
 </style>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".carousel-inner");
-    const items = carousel.querySelectorAll(".carousel-item");
-    let currentIndex = 0;
-
-    function showNextSlide() {
-      items[currentIndex].classList.remove("active");
-      currentIndex = (currentIndex + 1) % items.length;
-      items[currentIndex].classList.add("active");
-    }
-
-    // Create next button
-    const nextBtn = document.createElement("button");
-    nextBtn.textContent = ">";
-    nextBtn.classList.add("carousel-control", "next");
-    nextBtn.addEventListener("click", showNextSlide);
-
-    // Append button to the carousel container
-    const carouselContainer = carousel.closest(".carousel-container");
-    carouselContainer.appendChild(nextBtn);
-
-    // Auto-slide every 5 seconds
-    setInterval(showNextSlide, 5000);
-  });
-</script>

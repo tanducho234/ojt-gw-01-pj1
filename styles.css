@@ -555,20 +555,20 @@ main {
 
 .page3-product-card {
   background-color: #eeeeee;
-  border-radius: 10px; 
-  overflow: hidden; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  width: 285px; 
-  height: 446px; 
-  gap: 0px; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 285px;
+  height: 446px;
+  gap: 0px;
 }
 
 .page3-product-image {
-  position: relative; 
-  width: 285px; 
-  height: 301px; 
-  overflow: hidden; 
-  gap: 0px; 
+  position: relative;
+  width: 285px;
+  height: 301px;
+  overflow: hidden;
+  gap: 0px;
 }
 
 .page3-product-image img {
@@ -579,33 +579,33 @@ main {
 
 .page3-discount-tag {
   position: absolute;
-  top: 24px; 
-  left: 213px; 
-  background-color: #E97171;
+  top: 24px;
+  left: 213px;
+  background-color: #e97171;
   color: #fff;
-  width: 48px; 
-  height: 48px; 
-  border-radius: 50%; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
-  gap: 0px; 
+  gap: 0px;
 }
 .page3-status-tag {
   position: absolute;
-  top: 24px; 
-  left: 213px; 
+  top: 24px;
+  left: 213px;
   background-color: #27c7b7;
   color: #fff;
-  width: 48px; 
-  height: 48px; 
-  border-radius: 50%; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
-  gap: 0px; 
+  gap: 0px;
 }
 
 .page3-hover-content {
@@ -629,7 +629,7 @@ main {
 
 .page3-add-to-cart {
   background-color: #fff;
-  color: #B88E2F;
+  color: #b88e2f;
   border: none;
   padding: 10px 20px;
   margin-bottom: 20px;
@@ -682,7 +682,7 @@ main {
 
 .page3-original-price {
   text-decoration: line-through;
-  color: #B0B0B0;
+  color: #b0b0b0;
   margin-left: 10px;
 }
 
@@ -694,7 +694,7 @@ main {
   background-color: #fff;
   border: none;
   border-radius: 4px;
-  color: #B88E2F;
+  color: #b88e2f;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -705,20 +705,22 @@ main {
   background-color: #f0e8de;
 }
 
+
+
 @media (max-width: 1200px) {
   .page3-product-grid {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .page3-product-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 #browse_range {
-  max-width:1440px;
+  max-width: 1440px;
   padding: 20px;
   margin: 0 auto;
   text-align: center;
@@ -756,39 +758,38 @@ main {
 /* Tablet */
 @media (max-width: 800px) {
   .P2_item img {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
   .P2 {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #browse_range h1 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   #browse_range p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
   .P2_item img {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
 
   .P2 {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
- #browse_range h1 {
-      font-size: 1.5rem;
+  #browse_range h1 {
+    font-size: 1.5rem;
   }
 
   #browse_range p {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
   }
-
 }
