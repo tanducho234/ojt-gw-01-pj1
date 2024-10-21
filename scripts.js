@@ -1,4 +1,5 @@
 // Function to load component HTML into specified element
+
 function loadComponent(componentId, filePath) {
   fetch(filePath)
     .then((response) => response.text())
@@ -15,3 +16,12 @@ loadComponent("page3", "components/page3.html"); // Services
 loadComponent("page4", "components/page4.html"); // Portfolio
 loadComponent("page5", "components/page5.html"); // Contact
 loadComponent("page6", "components/page6.html"); // Footer
+// Side bar menu
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("menu-icon").addEventListener("click", toggleMenu);
+});
+
+function toggleMenu() {
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("active");
+}
