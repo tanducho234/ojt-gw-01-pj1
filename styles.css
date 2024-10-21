@@ -792,3 +792,77 @@ main {
   }
 
 }
+#page6 .footer {
+    max-width: 100%;
+    font-size: 14px; 
+    background-color: white; 
+    padding: 2% 5%; 
+    border-top: 2px solid #ccc; 
+    font-family: Verdana, sans-serif;
+    margin-top: auto;
+}
+
+#page6 .footer-content {
+    height: auto;
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: wrap; 
+}
+
+#page6 .company-info {
+    flex: 1;  
+    margin: 5px;  
+}
+
+#page6 .footer-links {
+    flex: 1; 
+    margin: 5px; 
+}
+
+#page6 .footer-links h3 {
+    margin-bottom: 5px; /* Giảm khoảng cách dưới heading */
+}
+
+#page6 .footer-links ul {
+    list-style-type: none;  
+    padding: 0; 
+}
+
+#page6 .footer-links li {
+    margin-bottom: 3px; 
+}
+
+#page6 .footer-links a {
+    text-decoration: none; 
+    color: #333; 
+}
+
+#page6 .footer-links a:hover {
+    color: #007bff; 
+}
+
+#page6 .newsletter {
+    flex: 1;  
+    margin: 5px; 
+}
+
+#page6 .newsletter form {
+    display: flex;  
+    flex-direction: column; 
+}
+
+
+#page6 .copyright {
+    text-align: left;  
+    margin-top: 10px; 
+    padding-top: 5px; 
+    border-top: 2px solid #ccc; 
+    margin-bottom: 0px;
+}
+
+
+
+#page6 .container {
+    width: 100%; /* auto control as screen */
+    padding: 5%;
+}
