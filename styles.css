@@ -1,0 +1,107 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: F5F5F5;
+        }
+
+        .container {
+            max-width: 1799px;
+            margin: 0 auto;
+        }
+
+        .header-part5 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .header-part5 h2 {
+            margin-bottom: 0;
+            font-weight: 600;
+            color: #616161;
+
+        }
+
+        .header-part5 h1 {
+            margin-top: 5px;
+            font-size: 2.5em;
+        }
+
+        .image-grid-part5 {
+            position: relative;
+            width: 1799px;
+            height: 721px;
+            overflow: hidden;
+        }
+
+        .image-grid-part5 img {
+            position: absolute;
+            object-fit: cover;
+        }
+
+        .p5p1 {
+            width: 274px;
+            height: 382px;
+            top: 0;
+            left: 0;
+        }
+
+        .p5p2 {
+            width: 381px;
+            height: 323px;
+            bottom: 0;
+            left: 0;
+        }
+
+        .p5p3 {
+            width: 451px;
+            height: 312px;
+            top: 70px;
+            left: 290px;
+        }
+
+        .p5p4 {
+            width: 344px;
+            height: 242px;
+            bottom: 0;
+            left: 397px;
+            top: 398px
+        }
+
+        .p5p5 {
+            width: 295px;
+            height: 392px;
+            top: 156px;
+            left: 757px;
+        }
+
+        .p5p6 {
+            width: 178px;
+            height: 242px;
+            bottom: 0;
+            left: 1068px;
+            top: 463px
+        }
+
+        .p5p7 {
+            width: 290px;
+            height: 348px;
+            top: 99px;
+            left: 1068px;
+        }
+
+        .p5p8 {
+            width: 258px;
+            height: 196px;
+            bottom: 0;
+            left: 1262px;
+        }
+
+        .p5p9 {
+            width: 425px;
+            height: 433px;
+            top: 14px;
+            left: 1374px;
+        }
